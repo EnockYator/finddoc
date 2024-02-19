@@ -1,0 +1,37 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "serverside of a doctor appointment booking app",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EnockYator/MERN-Stack-Doctor-appointment-booking-app.git"
+  },
+  "keywords": [
+    "MERN",
+    "Stack",
+    "Web",
+    "Application",
+    "Doctor",
+    "Appointment",
+    "Booking",
+    "App"
+  ],
+  "author": "Enock Yator",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EnockYator/MERN-Stack-Doctor-appointment-booking-app/issues"
+  },
+  "homepage": "https://github.com/EnockYator/MERN-Stack-Doctor-appointment-booking-app#readme",
+  "dependencies": {
+    "dotenv": "^16.4.4",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.1.3",
+    "nodemon": "^3.0.3"
+  }
+}
