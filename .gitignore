@@ -3,12 +3,6 @@
 # ignore .env files
 .env
 
-# ignore .md files
-.md
-
-# don't ignore README.md files
-!README.md
-
 # ignore .git folder
 /.git
 
