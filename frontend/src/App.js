@@ -1,13 +1,11 @@
-
+import React from 'react';
+import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-      <h1>Doctor Appointment Booking App</h1>
-        
-      </header>
+      
     </div>
   );
 }
