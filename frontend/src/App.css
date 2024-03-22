@@ -1,4 +1,183 @@
-*{
+/*universal styles*/
+* {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
+
+/*all-authentication-pages styles*/
+
+.authentication{
+    background-color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo{
+    position: absolute;
+    top: 10px;
+    left: 30px;
+}
+
+.logo-title{
+    font-size: 1.7em !important;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    color: green !important;
+    letter-spacing: -2px;
+}
+
+.logo-title span{
+    font-size: 1.3em;
+}
+
+
+.card-title, .footer-items-card-title{
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    font-size: 1.7em;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.register-form, .login-form {
+    border: 1.5px solid green;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 10px;
+}
+
+/* authentication pages on smaller screens*/
+
+@media screen and (max-width: 425px){
+    .register-form, .login-form, .card-title{
+        margin: 10px !important;
+        margin-bottom: 15px !important;
+    }
+
+    .card-title{
+        font-size: 1.3em;
+    }
+
+    .authentication-btn{
+        font-size: 1em !important;
+        margin-top: 12px;
+    }
+
+    input {
+        margin-bottom: 8px !important;
+        padding: 8px 10px !important;
+    }
+
+    .authentication-alternative{
+        text-align: center !important;
+    }
+
+    .logo{
+        left: 15px;
+    }
+
+    .logo-title{
+        font-size: 1.4em !important;
+    }
+
+    .footer{
+        font-size: 0.75em !important;
+        font-weight: default !important;
+        line-height: 20px !important;
+    }
+
+    
+}  
+
+
+.authentication-btn {
+    width: 80%;
+    background-color: green;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.2em;
+    border: none;
+    padding: 5px;
+}
+
+.authentication-btn:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 255, 0.719);
+}
+
+input {
+    margin-bottom: 20px;
+    padding: 8px 15px;
+    font-size: 1em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(180, 223, 223);
+}
+
+input:focus {
+    outline: none;
+}
+
+.authentication-alternative {
+    margin: 15px;
+}
+
+.authentication-alternative a{
+    text-decoration: none;
+    font-size: 1.2em;
+    color: blue;
+}
+
+.footer{
+    position: absolute;
+    bottom: 0;
+    height: max-content;
+    width: 100vw;
+    background-color: rgba(0, 0, 255, 0.1);
+    text-align: center;
+    padding: 10px;
+    font-size: 1em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+    line-height: 25px;
+}
+
+.footer a{
+    text-decoration: none;
+}
+
+.footer a:focus{
+    color: red !important;
+}
+
+
+/* Footer pages styles */
+
+.footer-item
+{
+    width: 100vw;
+    min-height: 100vh;
+    background-color: white;
+    display:flex !important;
+    flex-direction:column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.footer-item .logo{
+    position: relative;
+    margin-bottom: 30px;
+}
+
